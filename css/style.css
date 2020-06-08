@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* mainpage */
+
+.maindonut {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.maindonut:hover {
+    transform: rotate(45deg);
+}
+
+.membercard {
+    padding: 1rem;
+}
+
+.formcolum {
+    padding-left: 0px;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "lobster", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+.logo {
+    width: 50%;
+}
+
+.header a {
+    font-family: var(--Sniglet-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header {
+    height: 100vh;
+    background: #dd2476;
+    background: var(--bggradient);
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    padding: 1rem !important;
+    font-family: var(--Lobster);
+    font-size: 1.3rem;
+}
+
+header .nav-link:hover {
+    color: #0F2027;
+    /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-7 {
+    padding-top: 20vmin;
+    font-family: var(--Rubik);
+}
+
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+}
+
+header .container .col-md-7 button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+header .container .col-md-7 button:hover {
+    background: transparent;
+    color: #fff;
+}
+
+header .container .col-md-7 h6,
+p {
+    color: #fff;
+}
+
+@media screen and (max-width: 490px) {
+    header .container .col-md-7 h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header .container .col-md-7 h1 {
+        font-size: 8rem;
+    }
+}
+
+.logo:hover {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+
+/*  section 1 */
+
+.section-1 {
+    padding: 10vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+.section-1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: #fff;
+    border-radius: 3px;
+    text-align: left;
+    padding: 10vmin 5vmin 8vmin 5vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.3em 0;
+    font-size: 2em;
+}
+
+
+/* section-2*/
+
+.section-2 {
+    margin-top: 5vmin;
+}
+
+.cover {
+    height: 55vmin;
+    background: url(../img/banner1.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cover .content h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: black;
+}
+
+.cover .content p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: black;
+}
+
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: .5em;
+    box-shadow: 1px 2px 50px rgba(53, 49, 49, 0.274);
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+    font-size: 4.4rem;
+    color: tomato;
+}
+
+.numbers .rect p {
+    font-family: var(--Patua);
+    color: black;
+}
+
+.purchase>h1 {
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.purchase>p {
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+    width: 22rem;
+    margin: 3vmin 3vmin;
+}
+
+.cards div {
+    padding: 0;
+    margin: 0;
+}
+
+.cards .title {
+    background: rgba(208, 241, 241, 0.3);
+    padding: 1.4em 2.5em;
+    font-size: 2vmin;
+}
+
+.card .card-text {
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.card-body .pricing {
+    background: rgba(208, 241, 241, 0.4);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.card-body .pricing h1 {
+    font-family: var(--Lobster);
+    padding-bottom: 2vmin;
+}
+
+.card-body .pricing .btn {
+    margin-bottom: 3vmin;
+}
+
+.card-body .pricing .btn:hover {
+    background: transparent;
+    color: black;
+}
+
+
+/* section 3 */
+
+.section-3 {
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+
+.section-3 .col-md-12 h1 {
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 5.3vmin;
+}
+
+.section-3 .col-md-12 p {
+    padding: 0 4em;
+    padding-bottom: 2.3em;
+    color: var(--light-gray);
+    font-size: 2.8vmin;
+}
+
+.section-3 .desktop {
+    background: #fff;
+    display: inline-block;
+    border-radius: 3.3em;
+    padding: 2.1vmin 4.4vmin;
+    margin: 1.2em;
+}
+
+.section-3 .desktop h3 {
+    font-size: 3.8vmin;
+}
+
+.section-3 .desktop p {
+    font-size: 1.8vmin;
+    color: black;
+}
+
+
+/* section 4 */
+
+.section-4 {
+    margin-bottom: 3vmin;
+}
+
+.card .card-body .card-title {
+    font-family: var(--Rubik);
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card .card-body .text-secondary {
+    color: #343a40 !important;
+    font-weight: bold;
+    margin: 2vmin;
+}
+
+.section-4 h1 {
+    font-family: var(--Lobster);
+    padding: 5vmin;
+}
+
+.team {
+    margin: 4vmin;
+}
+
+.card {
+    margin-top: 2.3vmin;
+}
+
+.border-radius {
+    border-radius: 320px;
+    width: 50%;
+}
+
+
+/* footer */
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    padding: 12vmin 10vmin;
+}
+
+footer p {
+    color: rgba(218, 213, 213, 0.5);
+    font-family: var(--Rubik);
+}
+
+footer .column i {
+    color: #ff512f;
+    padding: 0 0.6em;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+    .numbers .rect {
+        width: 10rem;
+        height: 8rem;
+    }
+    .numbers .rect h1 {
+        font-size: 2rem;
+    }
+    .section-3 {
+        height: inherit;
+        padding: 10vmin !important;
+    }
+    .section-3 .row h1 {
+        padding: 6vmin 4vmin;
+    }
+    .section-3 .platform .col-md-6 {
+        text-align: center !important;
+    }
+    .section-3 .desktop i {
+        font-size: 8vmin;
+    }
+    .section-4 .carousel-item {
+        padding-left: 0.6rem;
+    }
+    footer .row .col-md-2 {
+        margin-top: 8vmin;
+    }
+}
+
+
+/* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+    .section-4 .card {
+        width: 18em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .section-4 .carousel-inner {
+        margin-left: -4vmin;
+    }
+}
